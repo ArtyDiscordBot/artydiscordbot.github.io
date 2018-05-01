@@ -95,6 +95,22 @@ ul {
 }
 </style>
 </head>
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <a href="partners.html" style="color: black;" class="w3-bar-item w3-button">Partners</a>
+  <a href="staff.html" style="color: black;" class="w3-bar-item w3-button">Staff/Mods</a>
+  <a href="https://discord.gg/JJ7vrKH" style="color: black;" class="w3-bar-item w3-button">Discord</a>
+  <a href="https://goo.gl/forms/JQr7Q8Ve0LeCbd7g1" style="color: black;" class="w3-bar-item w3-button">Become a Staff Member!</a>
+  
+</div>
 <ul>
 <header>
 	<div class="w3-panel w3-green w3-round-large">
@@ -106,12 +122,12 @@ ul {
         </center>
     </div>
 <div class="topnav">
+  <button style="float: right;" class="w3-button w3-xlarge" onclick="w3_open()">☰</button>
   <a href="index.html">Home</a>
   <a href="#about">About</a>
   <a href="#info">Info</a>
   <a href="#commands">Commands</a>
-  <a style="float:right;" href="https://discord.gg/JJ7vrKH">Discord</a>
-  <a style="float:right;" href="partners.html">Partners</a>
+</div>
 </div>
 </header>
 </ul>
@@ -119,7 +135,9 @@ ul {
 	<body background="img/background.png">
 	<center>
 		<h1>Arty</h1>
+		<a href="index.html">
 		<img src="img/icon.png" width="150" height="150">
+		</a>
 		<br>
 		<button onclick="window.open('https://discordapp.com/oauth2/authorize?client_id=434618135203545098&scope=bot&permissions=-1')">Invite</button>
         <button onclick="window.open('https://discord.gg/JJ7vrKH')">Discord</button>
@@ -131,6 +149,7 @@ ul {
         <p>Arty is a multi-functional Discord bot!</p>
         <p>Music, Moderation and Fun!</p>
         <p>Arty Was created by Artucuno#1898 & is hosted in the Clouds</p>
+        <br>
         <br>
         <br>
         <br>

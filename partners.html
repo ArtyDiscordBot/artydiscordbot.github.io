@@ -3,6 +3,7 @@
 <head>
 <title>Arty - Partners</title>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 a {
@@ -78,15 +79,30 @@ body {
 }
 </style>
 </head>
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <a href="partners.html" style="color: black;" class="w3-bar-item w3-button">Partners</a>
+  <a href="staff.html" style="color: black;" class="w3-bar-item w3-button">Staff/Mods</a>
+  <a href="https://discord.gg/JJ7vrKH" style="color: black;" class="w3-bar-item w3-button">Discord</a>
+  <a href="https://goo.gl/forms/JQr7Q8Ve0LeCbd7g1" style="color: black;" class="w3-bar-item w3-button">Become a Staff Member!</a>
+  
+</div>
 <div style="position:sticky;">
 <header>
 <div class="topnav">
+  <button style="float: right;" class="w3-button w3-xlarge" onclick="w3_open()">☰</button>
   <a href="index.html">Home</a>
-  <a href="index.html#about">About</a>
-  <a href="index.html#info">Info</a>
-  <a href="index.html#commands">Commands</a>
-  <a style="float:right;" href="https://discord.gg/JJ7vrKH">Discord</a>
-  <a style="float:right;" href="partners.html">Partners</a>
+  <a href="#about">About</a>
+  <a href="#info">Info</a>
+  <a href="#commands">Commands</a>
 </div>
 </div>
 </header>
