@@ -13,6 +13,42 @@
 a {
 	color: white;
 }
+button{
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+button:hover{
+  background:#fff;
+  color:#1AAB8A;
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
 .enjoy-css {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
@@ -113,16 +149,6 @@ function w3_close() {
 </div>
 <ul>
 <header>
-	<div class="w3-panel w3-green w3-round-large">
-		<span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright">&times;</span>
-		<center>
-            <h3>Introducing......</h3>
-            <h2>Arty Rewards!!!</h2>
-            <p>Arty Rewards is a Free rewards system!
-            <p>Just use =rewardrank and Arty will give you a Ranking that you can redeem on the Arty Discord Server!</p>
-            <button onclick="window.open('files/rewards-img.png')">Check out the Perks!</button>
-        </center>
-    </div>
 <div class="topnav">
   <button style="float: right;" class="w3-button w3-xlarge" onclick="w3_open()">☰</button>
   <a href="#">Home</a>
@@ -142,10 +168,9 @@ function w3_close() {
 		<img src="img/icon.png" width="150" height="150">
 		</a>
 		<h3>What will you do today?</h3>
+		<button onclick="window.open('premium.html')">Premium</button>
 		<button onclick="window.open('https://discordapp.com/oauth2/authorize?client_id=434618135203545098&scope=bot&permissions=-1')">Invite</button>
-        <button onclick="window.open('https://discord.gg/JJ7vrKH')">Discord</button>
         <br>
-        <button onclick="window.open('https://github.com/ArtyDiscordBot')">Github</button>
 		<br>
 		<br>
         <h2><a id="about"></a>About <a href="#about">&#9675; </a></h2>
@@ -251,8 +276,17 @@ function w3_close() {
         </center>    
     </div>
     <center><a href="#"><h1>&#9652;</h1></a></center>
+    <center>
     <br>
     <br>
+    <button onclick="window.open('https://discordapp.com/oauth2/authorize?client_id=434618135203545098&scope=bot&permissions=-1')">Invite</button>
+    <button onclick="window.open('https://discord.gg/JJ7vrKH')">Discord</button>
+    <br>
+    <br>
+    <button onclick="window.open('https://github.com/ArtyDiscordBot')">Github</button>
+    <br>
+    <br>
+    </center>
 </body>
 <footer>
 	<p>--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
