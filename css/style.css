@@ -1,0 +1,108 @@
+.background {
+  background: #618BFF;
+  transition: 1.5s cubic-bezier(0.68, -0.15, 0.265, 1.35);
+}
+
+.background--on {
+  background: #FF8FDE;
+  transition: 1.5s cubic-bezier(0.68, -0.15, 0.265, 1.35);
+}
+
+.toggle-body {
+  width: 7rem;
+  height: 4rem;
+  position: absolute;
+  top: calc(50% - 4rem / 2);
+  left: calc(50% - 7rem / 2);
+  background: white;
+  border-radius: 2rem;
+  -webkit-animation: angle-reverse 1.5s cubic-bezier(0.68, -0.15, 0.265, 1.35);
+          animation: angle-reverse 1.5s cubic-bezier(0.68, -0.15, 0.265, 1.35);
+}
+
+.toggle-body--on {
+  -webkit-animation: angle 1.5s cubic-bezier(0.68, -0.15, 0.265, 1.35);
+          animation: angle 1.5s cubic-bezier(0.68, -0.15, 0.265, 1.35);
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.toggle-btn {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: calc(50% - 2rem / 2);
+  left: calc(27% - 2rem / 2);
+  background: white;
+  border-radius: 2rem;
+  background: #618BFF;
+  cursor: pointer;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  transition: 1.5s cubic-bezier(0.68, -0.15, 0.265, 1.35);
+}
+
+.toggle-btn--on {
+  transition: 1.5s cubic-bezier(0.68, -0.15, 0.265, 1.35);
+  -webkit-transform: translateX(150%);
+          transform: translateX(150%);
+  background: #FF8FDE;
+}
+
+@-webkit-keyframes angle {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes angle {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes angle-reverse {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes angle-reverse {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
